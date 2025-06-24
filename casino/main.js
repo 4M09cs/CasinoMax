@@ -7,7 +7,7 @@ let dateiname = window.location.pathname.split("/").pop();
 function GuthabenChange(){
   if (user === null){
     guthabenCount.textContent = "Login";
-    document.getElementById("guthaben").setAttribute("onclick", "window.location.href='../../login.html'");
+    document.getElementById("guthaben").setAttribute("onclick", "window.location.href='../../index.html'");
     
   } else {
     document.getElementById("Logout").removeAttribute("hidden");
@@ -24,7 +24,7 @@ function logout(){
     window.location.href = "../../login/login.html";
 } else{
     guthabenCount.textContent = "Login";
-    document.getElementById("guthaben").setAttribute("onclick", "window.location.href='../../login.html'");
+    document.getElementById("guthaben").setAttribute("onclick", "window.location.href='../../index.html'");
     document.getElementById("Logout").getAttribute("hidden")
     localStorage.clear()
     location.reload();
