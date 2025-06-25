@@ -17,7 +17,7 @@ function autoLog(){
     if (localStorage.getItem("user") === null){
         return
     } else
-        window.location.href = "home/home.html";
+        window.location.href = "casino/home/home.html";
 }
 
 
